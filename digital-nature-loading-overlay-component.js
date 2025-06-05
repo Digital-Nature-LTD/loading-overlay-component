@@ -1,7 +1,7 @@
 import DigitalNatureWebComponent from "@digital-nature-ltd/web-component";
 import componentTemplate from './digital-nature-loading-overlay-component-template.html?raw';
 
-class DigitalNatureLoadingOverlayComponent extends DigitalNatureWebComponent
+export default class DigitalNatureLoadingOverlayComponent extends DigitalNatureWebComponent
 {
     messages = [];
     messagePosition = 'lower';
