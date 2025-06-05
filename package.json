@@ -1,0 +1,19 @@
+{
+  "name": "@digital-nature-ltd/loading-overlay-component",
+  "version": "1.0.3",
+  "description": "A loading overlay web component",
+  "main": "digital-nature-loading-overlay-component.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Digital-Nature-LTD/loading-overlay-component"
+  },
+  "homepage": "https://www.digital-nature.co.uk",
+  "author": "Digital Nature LTD",
+  "license": "MIT",
+  "dependencies": {
+    "@digital-nature-ltd/web-component": "^1.0.3"
+  }
+}
