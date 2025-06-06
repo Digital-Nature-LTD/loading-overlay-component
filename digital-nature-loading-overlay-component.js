@@ -1,5 +1,5 @@
 import DigitalNatureWebComponent from "@digital-nature-ltd/web-component";
-import componentTemplate from './digital-nature-loading-overlay-component-template.html?raw';
+import template from './digital-nature-loading-overlay-component-template.html?raw';
 
 export default class DigitalNatureLoadingOverlayComponent extends DigitalNatureWebComponent
 {
@@ -12,10 +12,8 @@ export default class DigitalNatureLoadingOverlayComponent extends DigitalNatureW
     cycleSpeed = 5000;
     cycleMessagesInterval = null;
 
-    constructor() {
-        super({
-            template: componentTemplate
-        });
+    constructor(options = {}) {
+        super({...options, template: template});
 
         // add the messages and position to the component properties
         let messagesPassedIn = this.dataset.messages ? JSON.parse(this.dataset.messages): [];
