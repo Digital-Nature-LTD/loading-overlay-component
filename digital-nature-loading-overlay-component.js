@@ -3,6 +3,8 @@ import componentTemplate from './digital-nature-loading-overlay-component-templa
 
 export default class DigitalNatureLoadingOverlayComponent extends DigitalNatureWebComponent
 {
+    static tagName = 'digital-nature-loading-overlay';
+
     messages = [];
     messagePosition = 'lower';
     currentMessage = null;
@@ -113,4 +115,4 @@ export default class DigitalNatureLoadingOverlayComponent extends DigitalNatureW
 }
 
 // add the custom element to the registry
-customElements.define('digital-nature-loading-overlay', DigitalNatureLoadingOverlayComponent);
+customElements.define(DigitalNatureLoadingOverlayComponent.tagName, DigitalNatureLoadingOverlayComponent);
