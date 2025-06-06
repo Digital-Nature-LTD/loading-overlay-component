@@ -1,6 +1,6 @@
 {
   "name": "@digital-nature-ltd/loading-overlay-component",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A loading overlay web component",
   "main": "digital-nature-loading-overlay-component.js",
   "scripts": {
