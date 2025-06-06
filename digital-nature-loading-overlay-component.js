@@ -13,7 +13,7 @@ export default class DigitalNatureLoadingOverlayComponent extends DigitalNatureW
     cycleMessagesInterval = null;
 
     constructor(options = {}) {
-        super({...options, template: template});
+        super({template: template, ...options});
 
         // add the messages and position to the component properties
         let messagesPassedIn = this.dataset.messages ? JSON.parse(this.dataset.messages): [];
