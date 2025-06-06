@@ -16,7 +16,7 @@ import DigitalNatureLoadingOverlayComponent from '@digital-nature-ltd/loading-ov
 ### Populating with message(s)
 
 #### Using slots
-Or set the slot content directly.
+You can set the slot content directly.
 ```html
 <!-- html file -->
 <digital-nature-loading-overlay class="populated">
@@ -59,3 +59,37 @@ setTimeout(() => {
     loadingOverlay.deleteMessage(myMessage);
 }, 5000);
 ```
+
+
+## Slots
+The component supports the following slots:
+
+### `upper-text`
+Text that will be displayed in the upper part of the loading overlay. This is typically used for a short message or title.
+
+### `lower-text`
+Text that will be displayed in the lower part of the loading overlay. This is typically used for a longer message or description.
+
+
+## Styling the component
+Some aspects of the component can be styled using CSS variables.
+
+The following variables are available:
+```css
+digital-nature-loading-overlay {
+    --font-size-paragraph-small: 0.8rem;
+    --font-size-paragraph: 1rem;
+}
+```
+
+The `:before` psuedo element is added to the centre of the overlay. It can be used to add an image:
+```css
+digital-nature-loading-overlay {
+    &:before {
+        background: transparent url(your-image-here.svg) no-repeat center center;
+        background-size: 100px;
+    }
+}
+```
+
+
